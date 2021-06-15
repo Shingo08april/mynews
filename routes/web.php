@@ -14,6 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('admin/profile/create', 'Admin\ProfileController@add');
+
+Route::get('admin/profile/adit', 'Admin\ProfileController@edit');
 //abc
 Route::group(['XXX'], function() {
     Route::get('XXX', 'AAAController@bbb');
