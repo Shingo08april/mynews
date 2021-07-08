@@ -50,8 +50,8 @@ class ProfileController extends Controller
     
   public function delete(Request $request)
   {
-      $news = News::find($request->id);
-      $news->delete();
+      $profile = Profile::find($request->id);
+      $profile->delete();
       return redirect('admin/profile/');
   } 
 }
